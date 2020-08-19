@@ -7,6 +7,8 @@ WebLogicEcho.java:43中的codeClass是MyFilter.class的字节码数组，自己�
 
 shell的注册地址在org/chabug/payloads/WebLogicEcho.java:51修改
 
+![](./img/demo.gif)
+
 # 已知问题
 1. 使用PythonInterpreter定义字节码会直接把weblogic进程打挂.
 2. Filter shell无法获取pageContext，导致无法使用哥斯拉、蚁剑、冰蝎等工具链接，暂时只实现了cmdshell。
