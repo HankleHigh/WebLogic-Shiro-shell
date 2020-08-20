@@ -5,11 +5,12 @@ public class Hello {
 
     public static void main(String[] args) throws Exception {
 
-        byte[] bytes = Serializables.getBytesByFile("E:\\code\\java\\weblogic_exp\\target\\classes\\MyFilter.class");
+        byte[] bytes = Serializables.getBytesByFile("E:\\code\\java\\weblogic_exp\\target\\classes\\MyAntShellFilter.class");
         String s = "";
+        System.out.println(bytes.length);
         for (byte b : bytes) {
             s += String.format("%s%s", b, ",");
         }
-        System.out.println(s);
+        System.out.println(s.length());
     }
 }

